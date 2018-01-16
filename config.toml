@@ -1,0 +1,20 @@
+baseurl = "https://rasa-silva.github.io/blog/"
+title = "rasa-silva"
+languageCode = "en"
+paginate = 20
+theme = "temple"
+publishDir = "docs"
+
+[params]
+  highlight = true 
+  hjslangs = ["go", "kotlin"]
+
+# Builds a list page for each category given
+[taxonomies]
+  tag = "tags"
+  # category = "categories"
+
+[author]
+  name = "Ricardo Silva"
+  github = "rasa-silva"
+  email = "rasa.silva@gmail.com"
