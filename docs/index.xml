@@ -25,5 +25,16 @@ Basic When starting a new go project, the most basic version is simply to
 mkdir project cd project &amp;lt;edit&amp;gt; main.go  on the editor of your choice put</description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://rasa-silva.github.io/blog/about/</link>
+      <pubDate>Mon, 15 Jan 2018 17:02:43 +0000</pubDate>
+      <author>rasa.silva@gmail.com (Ricardo Silva)</author>
+      <guid>https://rasa-silva.github.io/blog/about/</guid>
+      <description> Summary Software Engineer with 12+ experience in backend applications.
+Experience Education Instituto Superior Técnico
+Skills  Programming: Java, Kotlin, Go, Android Languages: Native Portuguese, conversational English Systems: Linux, Windows, OS X, Android  </description>
+    </item>
+    
   </channel>
 </rss>
