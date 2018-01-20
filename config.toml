@@ -9,8 +9,8 @@ pygmentsCodeFences = true
 pygmentsStyle = "friendly"
 
 [params]
-  highlight = true 
-  hjslangs = ["go", "kotlin"]
+  #highlight = true 
+  #hjslangs = ["go", "kotlin"]
 
 # Builds a list page for each category given
 [taxonomies]
