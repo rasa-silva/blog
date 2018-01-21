@@ -4,6 +4,8 @@ menu: "main"
 meta: "false"
 ---
 
+#### Software Engineer
+
 <span class="fa fa-map-marker"> Lisbon, Portugal  |</i>
 <span class="fa fa-envelope">   rasa.silva@gmail.com  |</i>
 <span class="fa fa-mobile-phone">   +351 96 772 8752</i>
@@ -33,42 +35,38 @@ As member of the architecture team for a scalable event-driven system:
 
 - Gave several presentations to project teams including: Kotlin, Event Sourcing, Akka, Kafka, Java8.
 
-
-Designed and implemented a service responsible for lifecycle control and HA support.
+Designed and implemented a service responsible for service lifecycle control and HA support.
 
 Refactored several services reducing code complexity, dependencies and memory footprint.
 
-
-`Java SE, Kafka, Zookeeper, Akka, Protobuf, Oracle, Linux, Windows`
+`JSE, Kafka, Zookeeper, Akka, Protobuf, Oracle, Gradle, Git, Jenkins`
 
 ### Senior Software Engineer, Nokia Siemens Networks, Portugal
 <time>Nov 2009 to <mark>XXX</mark></time>
 
-Arquitectura, análise e desenvolvimento de software sobre JEE em
-ambiente Agile para uma plataforma de gestão de redes de
-transporte.
+Redesigned and implemented a complete refactor to a complex JSE software component, responsible for mediating between hardware network equipment and management software.
 
-`Java SE, JEE, JBOSS, SNMP, Oracle, Solaris, Windows`
+Designed and implemented features for a management software solution for optical and packet networks.
+
+`JSE, JEE, JBOSS, SNMP, Oracle, Maven, SVN, Jenkins`
 
 ### Software Engineer, Nokia Siemens Networks, Portugal
 <time>Dec 2006 to Set 2009</time>
+ 
+Designed and implemented software for support of Optical and Ethernet networks.
 
-Análise e desenvolvimento de software para soluções de gestão de
-redes com integração de tecnologias de core (DWDM) e edge
-(Ethernet).
-Análise arquitectural de sistemas, Reverse-enginnering de software
-complexo.
+Part of a task-force to "_reverse-engineer_" a huge undocumented legacy application.
 
-`Java SE, C++, CORBA, DCOM, Solaris, Windows`
+`JSE, C++, CORBA, DCOM, SVN, Solaris, Windows`
 
 ### Junior Software Engineer, Siemens SA, Portugal
 <time>Nov 2004 to Nov 2006</time>
 
-Análise e desenvolvimento de software em Java e Python para
-soluções integradas de gestão de redes Ethernet e ATM. Análise de
-software e hardware de telecomunicações como routers, switches e DSLAMs.
+Designed and implemented features for an integrated software solution for managing Ethernet and ATM networks.
 
-`C++, Java SE, SNMP, CORBA, Solaris, Windows`
+Analyzed telecom hardware like routers, switches and DSLAMs and their respective software APIs.
+
+`C++, JSE, SNMP, CORBA, ClearCase, Solaris`
 
 
 ## Education
@@ -90,8 +88,8 @@ software e hardware de telecomunicações como routers, switches e DSLAMs.
 <time style="float: right">Jul 2006</time> 
 - **Applying Object-Oriented Design Patterns**<small>, Learning Tree </small>
 <time style="float: right">May 2006 </time>
-- **MSC in Computer Science**, <small>Instituto Superior Técnico</small>  
-<time>Oct 1997 <span class="fa fa-arrow-right"/> Oct 2004</time>
+- **MSC in Computer Science**, <small>Instituto Superior Técnico</small>
+<time style="float: right">Oct 1997 <span class="fa fa-arrow-right"></span> Oct 2004</time>
 
 ## Languages
 
