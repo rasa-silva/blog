@@ -108,7 +108,7 @@ Although not a main focus of my professional activities, I always try to keep le
 
 I've made a GitHub client for `Android` which, unfortunately, I've been unable to finish for now...
 
-I'm currently learning `Go` and made some contact with `Docker`, `PostreSQL` and `RabbitMQ`.
+I'm currently learning `Go` and made some contact with `Docker`, `PostgreSQL` and `RabbitMQ`.
 
 
 ## Languages
