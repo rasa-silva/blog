@@ -16,7 +16,7 @@ _"The price of reliability is the pursuit of the utmost simplicity." - Tony Hoar
 
 ## About
 
-Software Engineer with 12+ years of experience in back-end applications with a passion for clean architecture and readable code.
+Software Engineer with 13 years of experience in back-end applications with a passion for clean architecture and readable code.
 
 Currently a member of the software architecture team for a <acronym title="Software Defined Networking">SDN</acronym> distributed system controlling optical networks.
 
@@ -61,7 +61,7 @@ Designed and implemented features for a management software solution for optical
 ### Software Engineer, Nokia Siemens Networks, Portugal
 <time>Dec 2006 to Set 2009</time>
  
-Designed and implemented software for support of Optical and Ethernet networks.
+Designed and implemented software for support of optical and ethernet networks.
 
 Part of a task-force to "_reverse-engineer_" a huge undocumented legacy application.
 
@@ -70,7 +70,7 @@ Part of a task-force to "_reverse-engineer_" a huge undocumented legacy applicat
 ### Junior Software Engineer, Siemens SA, Portugal
 <time>Nov 2004 to Nov 2006</time>
 
-Designed and implemented features for an integrated software solution for managing Ethernet and ATM networks.
+Designed and implemented features for an integrated software solution for managing ethernet and ATM networks.
 
 Analyzed telecom hardware like routers, switches and DSLAMs and their respective software APIs.
 
