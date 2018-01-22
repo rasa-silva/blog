@@ -101,7 +101,7 @@ Analyzed telecom hardware like routers, switches and DSLAMs and their respective
 
 Although not a main focus of my professional activities, I always try to keep learning new things.
 
-I've made a GitHub client for `Android` which, unfortunately I've been unable to finish for now...
+I've made a GitHub client for `Android` which, unfortunately, I've been unable to finish for now...
 
 I'm currently learning `Go` and made some contact with `Docker`, `PostreSQL` and `RabbitMQ`.
 
