@@ -25,30 +25,32 @@ I'm constantly trying to improve my craft and love discovering new technologies 
 ## Professional Experience
 
 ### Lead Software Engineer, Coriant, Portugal
-<mark><time>XXX</time></mark>
+<time>May 2013 to present</time>
 
-As member of the architecture team for a scalable event-driven system:
+As member of the architecture team for a distributed event-driven system:
 
-- Lead the replacement of a primitive P2P IPC implementation with a message broker approach supported by Kafka.
+- Lead the replacement of a fragile P2P IPC implementation with a message broker approach supported by Kafka.
 
 - Introduced Zookeeper as a centralized configuration store and "service presence" support.
 
 - Mediated system architecture and software teams talks about feature design and implementation. 
 
-- Gave several presentations to project teams including: Kotlin, Event Sourcing, Akka, Kafka, Java8.
+- Gave several presentations to software teams including: Kotlin, Event Sourcing, Akka, Kafka, Java8.
 
 As member of a software team:
 
-- Designed and implemented a service responsible for service lifecycle control and HA support.
+- Designed and implemented a service responsible for services lifecycle control and HA support.
 
 - Pushed for the split of large services with mixed responsibilities into smaller ones with a single responsibility.
 
 - Refactored several existing services reducing code complexity, dependencies and memory footprint.
 
+- Part of the team that made several prototypes for what would become the SDN solution of the company.
+
 `JSE` `Kafka` `Zookeeper` `Akka` `Protobuf` `Oracle` `Gradle` `Git` `Jenkins`
 
 ### Senior Software Engineer, Nokia Siemens Networks, Portugal
-<time>Nov 2009 to <mark>XXX</mark></time>
+<time>Nov 2009 to May 2013</time>
 
 Redesigned and implemented a complete refactor to a complex JSE software component, responsible for mediating between hardware network equipment and management software.
 
@@ -77,7 +79,10 @@ Analyzed telecom hardware like routers, switches and DSLAMs and their respective
 
 ## Education
 
-- <mark>Latest ones</mark>
+- **Java Low Latency**<small>, Peter Lawrey</small>
+<time style="float: right">Mar 2017</time>
+- **Java Best Practices and Design Patters**<small>, Learning Tree</small>
+<time style="float: right">Mar 2014</time>
 - **Java EE5**<small>, Learning Tree</small>
 <time style="float: right">Jul 2010</time>
 - **Secure Java Coding**<small>, Search-Lab</small>
