@@ -8,7 +8,7 @@
     <language>en</language>
     <managingEditor>rasa.silva@gmail.com (Ricardo Silva)</managingEditor>
     <webMaster>rasa.silva@gmail.com (Ricardo Silva)</webMaster>
-    <lastBuildDate>Wed, 17 Jan 2018 10:48:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jan 2018 18:34:51 +0000</lastBuildDate>
     
 	<atom:link href="https://rasa-silva.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,18 @@
     <item>
       <title>Go</title>
       <link>https://rasa-silva.github.io/blog/tags/go/</link>
-      <pubDate>Wed, 17 Jan 2018 10:48:00 +0000</pubDate>
+      <pubDate>Tue, 23 Jan 2018 18:34:51 +0000</pubDate>
       <author>rasa.silva@gmail.com (Ricardo Silva)</author>
       <guid>https://rasa-silva.github.io/blog/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://rasa-silva.github.io/blog/tags/java/</link>
+      <pubDate>Tue, 23 Jan 2018 18:34:51 +0000</pubDate>
+      <author>rasa.silva@gmail.com (Ricardo Silva)</author>
+      <guid>https://rasa-silva.github.io/blog/tags/java/</guid>
       <description></description>
     </item>
     

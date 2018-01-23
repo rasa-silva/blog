@@ -4,7 +4,12 @@
   
   <url>
     <loc>https://rasa-silva.github.io/blog/posts/</loc>
-    <lastmod>2018-01-17T10:48:00+00:00</lastmod>
+    <lastmod>2018-01-23T18:34:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rasa-silva.github.io/blog/posts/go_testing/</loc>
+    <lastmod>2018-01-23T18:34:51+00:00</lastmod>
   </url>
   
   <url>
@@ -19,7 +24,13 @@
   
   <url>
     <loc>https://rasa-silva.github.io/blog/tags/go/</loc>
-    <lastmod>2018-01-17T10:48:00+00:00</lastmod>
+    <lastmod>2018-01-23T18:34:51+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rasa-silva.github.io/blog/tags/java/</loc>
+    <lastmod>2018-01-23T18:34:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -29,13 +40,13 @@
   
   <url>
     <loc>https://rasa-silva.github.io/blog/tags/</loc>
-    <lastmod>2018-01-17T10:48:00+00:00</lastmod>
+    <lastmod>2018-01-23T18:34:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rasa-silva.github.io/blog/</loc>
-    <lastmod>2018-01-17T10:48:00+00:00</lastmod>
+    <lastmod>2018-01-23T18:34:51+00:00</lastmod>
     <priority>0</priority>
   </url>
   

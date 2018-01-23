@@ -1,0 +1,206 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>rasa-silva</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The HTML5 Herald" />
+  <meta name="author" content="Ricardo Silva" />
+  <meta name="generator" content="Hugo 0.32.4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  <link rel="stylesheet" type="text/css" href="/blog/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="/blog/">rasa-silva</a>
+            </h1>
+
+      <ul id="social-media">
+          
+        <li><a href="https://github.com/rasa-silva"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+           
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/blog/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/blog/about/">
+                <i class="fa-li fa  fa-lg"></i><span>Ricardo Silva</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Data and behavior</h1>
+
+    
+        <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2018-01-23T18:34:51Z">Jan 23, 2018</time>
+        </li>
+        
+        
+
+        
+        <li>
+            <em>
+                
+                    
+                    <a href="/tags/go/">#go</a>
+                
+                    , 
+                    <a href="/tags/java/">#java</a>
+                
+            </em>
+        </li>
+        
+
+        <li>2 min read</li>
+    </ul>
+</aside>
+    
+
+    <p>On my Go learning journey, after looking at &lsquo;Dependency Management&rsquo;, I started looking into testing&hellip;</p>
+
+<p>I&rsquo;ve decided that doing a basic GitHub client to fetch updates from my favorite repos was a nice little experiment to start with&hellip;</p>
+
+<p>That said, part of the first run at implementing this was something like</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#007020;font-weight:bold">func</span> fetchCommits(repoName <span style="color:#902000">string</span>) ([]commit, <span style="color:#902000">error</span>) {
+	url <span style="color:#666">:=</span> fmt.Sprintf(<span style="color:#4070a0">&#34;https://api.github.com/repos/%s/commits&#34;</span>, repoName)
+
+	body, err <span style="color:#666">:=</span> fetch(url)
+	<span style="color:#007020;font-weight:bold">if</span> err <span style="color:#666">!=</span> <span style="color:#007020;font-weight:bold">nil</span> {
+		<span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">nil</span>, err
+	}
+
+	<span style="color:#007020;font-weight:bold">var</span> commits []commit
+	<span style="color:#007020;font-weight:bold">if</span> err <span style="color:#666">:=</span> json.Unmarshal(body, <span style="color:#666">&amp;</span>commits); err <span style="color:#666">!=</span> <span style="color:#007020;font-weight:bold">nil</span> {
+		<span style="color:#007020;font-weight:bold">return</span> <span style="color:#007020;font-weight:bold">nil</span>, err
+	}
+
+	<span style="color:#007020;font-weight:bold">return</span> commits, <span style="color:#007020;font-weight:bold">nil</span>
+}</code></pre></div>
+<p>The fact that the URL is hardcoded is not a problem <em>per se</em> (I don&rsquo;t think Github will change the endpoint or the API any time soon).</p>
+
+<p>The problem is that it&rsquo;s not testable.</p>
+
+<p>If we try to test <code>fetchCommit()</code> we&rsquo;ll hit the real API endpoints no matter what&hellip;not good&hellip;</p>
+
+<p>In a class based OO world, the code above could be something like</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">GitHubAPI</span> <span style="color:#666">{</span>
+
+    <span style="color:#007020;font-weight:bold">private</span> <span style="color:#007020;font-weight:bold">final</span> String baseURL<span style="color:#666">;</span>
+
+    GitHubAPI<span style="color:#666">(</span>String baseURL<span style="color:#666">)</span> <span style="color:#666">{</span>
+        <span style="color:#007020;font-weight:bold">this</span><span style="color:#666">.</span><span style="color:#4070a0">baseURL</span> <span style="color:#666">=</span> baseURL<span style="color:#666">;</span>
+    <span style="color:#666">}</span>
+
+    <span style="color:#007020;font-weight:bold">public</span> <span style="color:#06287e">fetchCommits</span><span style="color:#666">(</span>String repo<span style="color:#666">)</span> <span style="color:#666">{</span>
+        <span style="color:#666">...</span>
+    <span style="color:#666">}</span>
+
+<span style="color:#666">}</span></code></pre></div>
+<p>But how to do this in Go?&hellip;</p>
+
+<p>A class has two parts: data and behavior.</p>
+
+<p>In Java, the data part is modeled as <em>class fields</em>. The behavior is modeled as <em>class methods</em>. If a class is just data, we usually call it a DTO or a Holder.</p>
+
+<p>In Go, data is modeled by basic types such as <code>int</code>, <code>bool</code>, or <code>string</code>. It can also be a collection of types, called <code>struct</code>.</p>
+
+<p>Behavior is simply defined by functions. We can also <em>bind</em> behavior to a type with a function (called a method in this case), via a special parameter called a <em>receiver</em>.</p>
+
+<p>Let&rsquo;s do that</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#007020;font-weight:bold">type</span> githubAPI <span style="color:#007020;font-weight:bold">struct</span> {
+	BaseUrl <span style="color:#902000">string</span>
+
+}
+
+<span style="color:#007020;font-weight:bold">func</span> (api githubAPI) fetchCommits(repoName <span style="color:#902000">string</span>) ([]commit, <span style="color:#902000">error</span>) {
+	url <span style="color:#666">:=</span> fmt.Sprintf(<span style="color:#4070a0">&#34;%s/repos/%s/commits&#34;</span>, api.BaseURL, repoName)
+
+	<span style="color:#666">...</span>
+}</code></pre></div>
+<p>This is the same solution presented in the Java code but with its parts decomposed.</p>
+
+<p>Now it can be tested</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#007020;font-weight:bold">func</span> TestFetchCommits(t <span style="color:#666">*</span>testing.T) {
+
+	ts <span style="color:#666">:=</span> httptest.NewServer(http.HandlerFunc(<span style="color:#007020;font-weight:bold">func</span>(w http.ResponseWriter, r <span style="color:#666">*</span>http.Request) {
+		w.WriteHeader(http.StatusOK)
+		w.Header().Set(<span style="color:#4070a0">&#34;Content-Type&#34;</span>, <span style="color:#4070a0">&#34;application/json&#34;</span>)
+		io.WriteString(w, <span style="color:#4070a0">`[ &lt;json payload&gt;	]`</span>)
+	}))
+
+	<span style="color:#007020;font-weight:bold">defer</span> ts.Close()
+
+	api <span style="color:#666">:=</span> githubAPI{BaseURL: ts.URL}
+
+	commits, err <span style="color:#666">:=</span> api.fetchCommits(<span style="color:#4070a0">&#34;someRepo&#34;</span>)
+
+	<span style="color:#007020;font-weight:bold">if</span> err <span style="color:#666">!=</span> <span style="color:#007020;font-weight:bold">nil</span> {
+		t.Fatal(err)
+	}
+
+	<span style="color:#007020;font-weight:bold">if</span> <span style="color:#007020">len</span>(commits) <span style="color:#666">!=</span> <span style="color:#40a070">1</span> {
+		t.Fatal(<span style="color:#4070a0">&#34;Commits len should be 1&#34;</span>)
+	}
+
+}</code></pre></div>
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="https://rasa-silva.github.io/blog/posts/golang_deps/"><i class="fa fa-chevron-circle-left"></i> Dependencies in Go</a>
+        </li>
+        
+        
+    </ul>
+</section>
+    
+
+
+
+
+
+</main>
+    <footer>
+        <h6> | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="https://rasa-silva.github.io/blog/index.xml">Subscribe</a></h6>
+    </footer>
+</div>
+<script src="/blog/js/scripts.js"></script>
+</body>
+
+</html>
