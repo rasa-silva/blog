@@ -25,5 +25,14 @@ Basic When starting a new go project, the most basic version is simply to
 mkdir project cd project &amp;lt;edit&amp;gt; main.go  on the editor of your choice put</description>
     </item>
     
+    <item>
+      <title>Learning Go</title>
+      <link>https://rasa-silva.github.io/blog/posts/learning_go/</link>
+      <pubDate>Mon, 15 Jan 2018 13:18:18 +0000</pubDate>
+      <author>rasa.silva@gmail.com (Ricardo Silva)</author>
+      <guid>https://rasa-silva.github.io/blog/posts/learning_go/</guid>
+      <description>Being a software engineer by profession, I find weird that some of my peers don&amp;rsquo;t seem to have any interest in discovery and improvement. Now, I&amp;rsquo;m definitely not one for going home after an 8hr work day, and spend 4 more hours coding some side-project. I have a wife, 2 daughters and other interests in life besides software engineering&amp;hellip; But for the life of me, I can&amp;rsquo;t understand how some software engineers don&amp;rsquo;t seem to find one bit interesting when a new language comes out.</description>
+    </item>
+    
   </channel>
 </rss>
