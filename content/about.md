@@ -102,14 +102,9 @@ Analyzed telecom hardware like routers, switches and DSLAMs and their respective
 - **MSC in Computer Science**, <small>Instituto Superior Técnico</small>
 <time style="float: right">Oct 1997 <span class="fa fa-arrow-right"></span> Oct 2004</time>
 
-## Side interests
+## Other Tech
 
-Although not a main focus of my professional activities, I always try to keep learning new things.
-
-I've made a GitHub client for `Android` which, unfortunately, I've been unable to finish for now...
-
-I'm currently learning `Go` and made some contact with `Docker`, `PostgreSQL` and `RabbitMQ`.
-
+I always try to keep learning new things. Although not a focus of my professional activities,I've made some contact with `Android`, `Docker` and I'm currently learning `Go`.
 
 ## Languages
 
