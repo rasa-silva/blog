@@ -29,17 +29,21 @@ I'm constantly trying to improve my craft and love discovering new technologies 
 
 As member of the architecture team for a distributed event-driven system:
 
-- Lead the replacement of a fragile P2P IPC implementation with a message broker approach supported by Kafka.
+- Introduced GRPC as the approach for P2P IPC.
+
+- Introduced Kotlin as an alternative language to Java.
+
+- Introduced a message broker approach, supported by Kafka, complementing an existing fragile P2P IPC.
 
 - Introduced Zookeeper as a centralized configuration store and "service presence" support.
 
 - Mediated system architecture and software teams talks about feature design and implementation. 
 
-- Gave several presentations to software teams including: Kotlin, Event Sourcing, Akka, Kafka, Java8.
+- Gave several presentations to software teams including: Kotlin, Event Sourcing, Akka, Kafka, Java 8-11.
 
 As member of a software team:
 
-- Designed and implemented a service responsible for services lifecycle control and HA support.
+- Designed and implemented a service responsible for services lifecycle control and Geo-redundancy support.
 
 - Pushed for the split of large services with mixed responsibilities into smaller ones with a single responsibility.
 
@@ -47,7 +51,7 @@ As member of a software team:
 
 - Part of the team that made several prototypes for what would become the SDN solution of the company.
 
-`JSE` `Kafka` `Zookeeper` `Akka` `Protobuf` `Oracle` `Gradle` `Git` `Jenkins`
+`JSE` `Kotlin` `GRPC` `Kafka` `Zookeeper` `Akka` `Protobuf` `Oracle` `Gradle` `Git` `Jenkins`
 
 ### Senior Software Engineer, Nokia Siemens Networks, Portugal
 <time>Nov 2009 to May 2013</time>
@@ -104,7 +108,7 @@ Analyzed telecom hardware like routers, switches and DSLAMs and their respective
 
 ## Other Tech
 
-I always try to keep learning new things. Although not a focus of my professional activities,I've made some contact with `Android`, `Docker` and I'm currently learning `Go`.
+I always try to keep learning new things. Although not a focus of my professional activities, I've made some contact with `Android`, `Docker` and `Go`.
 
 ## Languages
 

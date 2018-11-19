@@ -2,7 +2,7 @@ baseurl = "https://rasa-silva.github.io/blog/"
 title = "rasa-silva"
 languageCode = "en"
 # paginate = 20
-theme = "kiera"
+theme = "hugo-kiera"
 publishDir = "docs"
 
 pygmentsCodeFences = true
